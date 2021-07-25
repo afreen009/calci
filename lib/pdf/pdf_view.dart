@@ -1,12 +1,9 @@
-import 'dart:convert';
-import 'dart:math';
-import 'package:flutter/services.dart';
+
 import 'package:open_file/open_file.dart';
 import 'package:pdf/pdf.dart';
 import 'dart:io';
 import 'package:pdf/widgets.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:universal_html/html.dart' as html;
 
 Future reportView(lists) async {
   print("inside pdf");

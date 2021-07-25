@@ -1,8 +1,5 @@
 import 'dart:ui';
 import 'package:calculator/services/local_auth.dart';
-import 'package:calculator/services/local_authentication_service.dart';
-import 'package:calculator/services/service_locator.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:math_expressions/math_expressions.dart';
@@ -34,9 +31,9 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
   String expression = "";
   double equationFontSize = 38.0;
   double resultFontSize = 48.0;
-  final LocalAuthenticationService _localAuth =
-      locator<LocalAuthenticationService>();
-   final Future<FirebaseApp> _firebaseApp=Firebase.initializeApp();
+  // final LocalAuthenticationService _localAuth =
+  //     locator<LocalAuthenticationService>();
+  //  final Future<FirebaseApp> _firebaseApp=Firebase.initializeApp();
   static Color blue = const Color.fromRGBO(76, 134, 180,1);
 static Color lightblue = const Color.fromRGBO(178, 203, 227,1);
   buttonPressed(String buttonText) {

@@ -10,7 +10,6 @@ import 'package:pdf/widgets.dart' as pw;
 // import 'package:pdf_test/PdfPreviewScreen.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:popup_menu/popup_menu.dart';
-import 'package:universal_html/html.dart' as html;
 
 import 'list_model.dart';
 import 'todo_list_page.dart';
@@ -57,7 +56,6 @@ class _ListPageState extends State<ListPage> {
   var cred = 0;
   var deb = 0;
   static Color blue = const Color.fromRGBO(76, 134, 180,1);
-static Color lightblue = const Color.fromRGBO(178, 203, 227,1);
   @override
   void initState() {
     var dt = DateTime.now();
